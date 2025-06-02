@@ -1,0 +1,123 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-color: white;
+  --txt-color: #121214;
+}
+
+:root:has(#light:checked) {
+  --bg-color: white;
+  --txt-color: #121214;
+}
+
+:root:has(#dark:checked) {
+  --bg-color: #121214;
+  --txt-color: #eee;
+}
+
+:root:has(#yellow:checked) {
+  --bg-color:#ebcf81;
+  --txt-color: #333;
+}
+
+:root:has(#purple:checked) {
+  --bg-color: #554361;
+  --txt-color: #eee;
+}
+
+:root:has(#red:checked) {
+  --bg-color: #b90000;
+  --txt-color: #fff0f0;
+}
+
+body {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1 1 100vw;
+  margin: 3px;
+
+  font-family: sans-serif;
+  background-color: var(--bg-color);
+  color: var(--txt-color);
+}
+
+main {
+  margin: 2rem;
+  flex: 1 1 100vw;
+}
+
+main {
+  height: calc(100vh - 436px);
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  background-color: #fff;
+  box-shadow: 0 0 1rem rgb(0 0 0 / 0.4);
+
+  padding: 1rem;
+  border-radius: 8px;
+
+  position: fixed;
+  bottom: 10rem;
+
+  left: 50%;
+  transform: translate(-50%);
+}
+
+input[type="radio"] {
+  appearance: none;
+  border: 3px solid var(--input-color);
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+}
+
+input[type="radio"]:checked {
+  background-color: var(--input-color);
+}
+
+#light {
+  --input-color: gray;
+}
+
+#dark {
+  --input-color: black;
+}
+#yellow {
+  --input-color: yellow;
+}
+#purple {
+  --input-color: purple;
+}
+#red {
+  --input-color: red;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  padding: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+@media only screen and (max-width: 717px) {
+  main {
+    height: calc(100vh - 330px);
+  }
+}
