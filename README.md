@@ -5,9 +5,9 @@ Este projeto demonstra como implementar a **mudança de temas (light, dark, yell
 
 ## 🧪 Demonstração
 
-![Preview do Projeto](https://avatars.githubusercontent.com/u/71414590?s=96&v=4)
+![Preview do Projeto](/assets/images/preview.png)
 
-Acesse: [https://github.com/ivannatech](https://github.com/ivannatech)
+Acesse para testar: [https://ivannatech.github.io/troca-de-tema-com-css/](https://ivannatech.github.io/troca-de-tema-com-css/)
 
 ---
 
